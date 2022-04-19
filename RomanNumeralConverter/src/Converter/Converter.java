@@ -93,7 +93,7 @@ public class Converter {
   private int verifyInput(String userInput) {
     try {
       int userNumber = Integer.parseInt(userInput);
-      if(userNumber == 0 || userNumber > 3999) {
+      if(userNumber <= 0 || userNumber > 3999) {
         throw new NumberFormatException();
       }
       return userNumber;
